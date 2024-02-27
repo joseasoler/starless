@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Starless</name>
+	<author>José Ángel Soler Ortiz</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<url>https://github.com/joseasoler/starless</url>
+	<packageId>joseasoler.starless</packageId>
+	<description><![CDATA[Starless is a mod...
+]]></description>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+	</loadAfter>
+</ModMetaData>
