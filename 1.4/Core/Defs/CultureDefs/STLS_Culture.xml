@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<CultureDef>
+		<defName>STLS_Culture</defName>
+		<label>starless</label>
+		<description>Traditions followed by the servants of the bloodfeeder masters reigning over the emptiness between stars.</description>
+		<!-- Used by ideology descriptions. -->
+		<pawnNameMaker>STLS_Namer_Master_Male</pawnNameMaker>
+		<pawnNameMakerFemale>STLS_Namer_Master_Female</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">STLS_Namer_Ideo</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">STLS_Namer_Deity</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">STLS_Namer_DeityType</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">STLS_Namer_LeaderTitle</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">STLS_Namer_Festival</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>STLS_Place_Starless</li>
+		</allowedPlaceTags>
+		<!-- ToDo: art asset -->
+		<iconPath>UI/Cultures/Astropolitan</iconPath>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Morbid</category>
+				<priority>1</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>0.5</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Punk</tag>
+				<baseWeight>0.5</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardPunk</tag>
+				<baseWeight>0.1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFacePunk</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooBodyPunk</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFaceTribal</tag>
+				<baseWeight>0.1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooBodyTribal</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<tag>Furskin</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+
+</Defs>

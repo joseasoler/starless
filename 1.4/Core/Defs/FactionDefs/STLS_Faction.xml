@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>STLS_Faction</defName>
+		<label>starless</label>
+		<pawnSingular>starless</pawnSingular>
+		<pawnsPlural>starless</pawnsPlural>
+		<description><![CDATA[The starless are a secretive and enigmatic group who reigns in the darkest expanses of space, far from the hated sunlight and close to the void they worship. They are known to be led by ancient and powerful bloodfeeders, who are venerated as godlike beings by the humans they keep as thralls and cattle.
+
+This faction is notorious for their ruthless raids against rimworlds, aimed at acquiring new slaves to be brainwashed into thralls. Their wanton cruelty and profound contempt for those they deem inferior makes them universally reviled.]]></description>
+		<canMakeRandomly>false</canMakeRandomly>
+		<canSiege>false</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<hidden>true</hidden>
+		<factionIconPath>World/WorldObjects/Expanding/SettlementTemporary</factionIconPath>
+		<factionNameMaker>STLS_Namer_Faction</factionNameMaker>
+		<colorSpectrum>
+			<li>(0.93, 0.39, 0.32)</li>
+			<li>(0.35, 0.90, 0.57)</li>
+			<li>(0.25, 0.66, 0.94)</li>
+			<li>(0.98, 0.75, 0.37)</li>
+			<li>(0.97, 0.62, 0.52)</li>
+		</colorSpectrum>
+		<leaderTitle>master</leaderTitle>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<earliestRaidDays>45</earliestRaidDays>
+		<permanentEnemy>true</permanentEnemy>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<techLevel>Ultra</techLevel>
+		<!-- ToDo: Set to thrall. -->
+		<basicMemberKind>Sanguophage</basicMemberKind>
+		<allowedCultures>
+			<li>STLS_Culture</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li>Bloodfeeding</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Anonymity</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_FireWorship</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Fleshcrafters</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Light</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li>Corpses_Ugly</li>
+			<li>ChildLabor_Disapproved</li>
+			<li>GrowthVat_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+		</disallowedPrecepts>
+		<structureMemeWeights>
+			<STLS_Structure_AncientMasters MayRequire="Ludeon.RimWorld.Ideology">1</STLS_Structure_AncientMasters>
+		</structureMemeWeights>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>-65~85</allowedArrivalTemperatureRange>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>STLS_Backstory_SpawnCategory_Thrall</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Leather_Human</li>
+				<li>Hyperweave</li>
+				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+				<Dirtmole>0.02</Dirtmole>
+				<Neanderthal>0.02</Neanderthal>
+				<Pigskin>0.02</Pigskin>
+				<Waster>0.02</Waster>
+				<Yttakin>0.02</Yttakin>
+				<AG_Animusen MayRequire="sarg.alphagenes">0.02</AG_Animusen>
+				<BS_Dwarf MayRequire="RedMattis.BigSmall">0.03</BS_Dwarf>
+				<BS_GreatOgre MayRequire="RedMattis.BigSmall">0.01</BS_GreatOgre>
+				<BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.005</BS_Half_Jotun>
+				<BS_Ogre MayRequire="RedMattis.BigSmall">0.04</BS_Ogre>
+				<BS_Redcap MayRequire="RedMattis.BigSmall">0.005</BS_Redcap>
+				<BS_Svartalf MayRequire="RedMattis.BigSmall">0.01</BS_Svartalf>
+				<Stoneborn MayRequire="det.stoneborn">0.01</Stoneborn>
+				<VRESaurids_Saurid MayRequire="vanillaracesexpanded.saurid">0.02</VRESaurids_Saurid>
+				<VRE_Boarskin MayRequire="vanillaracesexpanded.pigskin">0.005</VRE_Boarskin>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+	</FactionDef>
+
+</Defs>

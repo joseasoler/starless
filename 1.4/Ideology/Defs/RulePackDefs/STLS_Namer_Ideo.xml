@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Modified version of NamerIdeoGlobal. -->
+	<RulePackDef>
+		<defName>STLS_Namer_Ideo</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Ideology name from key deity -->
+				<li>r_ideoName(p=6)->[cultists] of [keyDeity]</li>
+				<li>r_ideoName->[keyDeity]'s [creed]</li>
+				<li>r_ideoName->[creed] of [keyDeity]</li>
+
+				<!-- Ideology name from symbol pack -->
+				<li>r_ideoName(p=6)->[packIdeoName]</li>
+				<li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-[packIdeoName]</li>
+				<li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-[packIdeoNameStructure]</li>
+				<li>r_ideoName(p=2)->[memeAdjective] [creed]</li>
+				<li>r_ideoName(p=1)->[creed] of [packTheme]</li>
+				<li>r_ideoName(p=1)->[cultists] of [packTheme]</li>
+				<li>r_ideoName(p=0.25)->The [creed]</li>
+
+				<!-- Member name. -->
+				<li>r_memberName(p=4)->[cultist]</li>
+				<li>r_memberName->[packMember]</li>
+
+				<!-- Ideology adjective. -->
+				<li>r_ideoAdjective(p=1)->[packAdjective]</li>
+				<li>r_ideoAdjective->[keyDeity]ic</li>
+				<li>r_ideoAdjective->[keyDeity]ic</li>
+				<li>r_ideoAdjective->[cultists]</li>
+
+				<!-- Generic content -->
+				<li>creed(priority=1)->[memeCreed]</li>
+
+				<li>cultists->cultists</li>
+				<li>cultists->devotees</li>
+				<li>cultists->fanatics</li>
+				<li>cultists->initiates</li>
+				<li>cultists->servants</li>
+				<li>cultists->zealots</li>
+
+				<li>cultist->cultist</li>
+				<li>cultist->devotee</li>
+				<li>cultist->fanatic</li>
+				<li>cultist->initiate</li>
+				<li>cultist->servant</li>
+				<li>cultist->zealot</li>
+
+				<li>hyphenPrefix(p=3)->[cultureHyphenPrefix]</li>
+				<li>hyphenPrefix->[memeHyphenPrefix]</li>
+
+				<li>cultureHyphenPrefix->cold</li>
+				<li>cultureHyphenPrefix->dark</li>
+				<li>cultureHyphenPrefix->eternal</li>
+				<li>cultureHyphenPrefix->umbral</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

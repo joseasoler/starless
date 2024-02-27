@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PlaceDef>
+		<defName>STLS_Place_StarlessVoid</defName>
+		<tags>
+			<li>STLS_Place_Starless</li>
+		</tags>
+		<placeRules>
+			<rulesStrings>
+				<li>place_name->Starless Void</li>
+
+				<li>place_summary->cold</li>
+				<li>place_summary->dark</li>
+				<li>place_summary->eternal</li>
+				<li>place_summary->infinite</li>
+				<li>place_summary->limitless</li>
+
+				<li>place_adjective->Starless</li>
+
+				<li>place_community->asteroid wasteland</li>
+				<li>place_community->astronomical observatory</li>
+				<li>place_community->hemogen extractor</li>
+				<li>place_community->cattle reserve</li>
+				<li>place_community->floating fortress</li>
+				<li>place_community->thrall habitat</li>
+				<li>place_community->umbral citadel</li>
+				<li>place_community->void sanctuary</li>
+				<li>place_community->xenogenetics lab</li>
+
+				<li>place_powerCenter->abbysal vault</li>
+				<li>place_powerCenter->floating castle</li>
+				<li>place_powerCenter->dark council</li>
+				<li>place_powerCenter->dark temple</li>
+				<li>place_powerCenter->void palace</li>
+
+				<li>place_job->butcher</li>
+				<li>place_job->drainer</li>
+				<li>place_job->enforcer</li>
+				<li>place_job->grandmaster</li>
+				<li>place_job->loremaster</li>
+				<li>place_job->master</li>
+				<li>place_job->overseer</li>
+				<li>place_job->ritualist</li>
+				<li>place_job->taskmaster</li>
+				<li>place_job->xenogenetist</li>
+
+				<li>place_personalWeapon->charge rifle</li>
+				<li>place_personalWeapon->longsword</li>
+				<li>place_personalWeapon->gladius</li>
+
+				<li>place_massWeapon->an antigrain cluster bomb</li>
+				<li>place_massWeapon->an annihilation engine</li>
+				<li>place_massWeapon->a horde of thralls</li>
+				<li>place_massWeapon->a relativistic projectile</li>
+				<li>place_massWeapon->a singularity generator</li>
+				<li>place_massWeapon->a rift cannon</li>
+
+				<li>place_foeLeader->conqueror</li>
+				<li>place_foeLeader->enforcer</li>
+				<li>place_foeLeader->warlord</li>
+
+				<li>place_foeSoldiers->infidels</li>
+				<li>place_foeSoldiers->interlopers</li>
+				<li>place_foeSoldiers->intruders</li>
+				<li>place_foeSoldiers->rebels</li>
+				<li>place_foeSoldiers->rivals</li>
+			</rulesStrings>
+		</placeRules>
+	</PlaceDef>
+
+</Defs>

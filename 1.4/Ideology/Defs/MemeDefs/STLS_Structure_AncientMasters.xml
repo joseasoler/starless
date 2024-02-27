@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<MemeDef>
+		<defName>STLS_Structure_AncientMasters</defName>
+		<label>ancient masters</label>
+		<description>The ancient masters demand unwavering reverence and servitude, their word regarded as divine, their wisdom peerless, and their power unmatched.</description>
+		<category>Structure</category>
+		<groupDef>Theist_Embodied</groupDef>
+		<!-- ToDo: art asset -->
+		<iconPath>UI/Structures/AbstractTheist</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>crypt</worshipRoomLabel>
+		<deityCount>3</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->[StructureAdjective]</li>
+
+				<li>memeCreed->conviction</li>
+				<li>memeCreed->creed</li>
+				<li>memeCreed->decree</li>
+				<li>memeCreed->devotion</li>
+				<li>memeCreed->enthrallment</li>
+				<li>memeCreed->oath</li>
+
+				<li>memeConcept->creation</li>
+				<li>memeConcept->life</li>
+
+				<li>memeLeaderNoun->elder</li>
+				<li>memeLeaderNoun->grandmaster</li>
+
+				<li>memeLeaderAdjective->[StructureAdjective]</li>
+
+				<li>memeMoralist->loremaster</li>
+				<li>memeMoralist->overseer</li>
+				<li>memeMoralist->ritualist</li>
+				<li>memeMoralist->scholar</li>
+				<li>memeMoralist->zealot</li>
+
+				<li>StructureAdjective->ancient</li>
+				<li>StructureAdjective->dark</li>
+				<li>StructureAdjective->eternal</li>
+				<li>StructureAdjective->inscrutable</li>
+				<li>StructureAdjective->ruthless</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>STLS_IdeoStory_TriumvirateMyth</def>
+					<weight>2.0</weight>
+				</li>
+				<li>
+					<def>STLS_IdeoStory_FounderMyth</def>
+					<weight>1.0</weight>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_theist</key>
+					<value>true</value>
+				</li>
+				<li>
+					<key>structure_theistEmbodied</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Devotion</ideoName>
+				<theme>devotion</theme>
+				<adjective>devotion</adjective>
+				<member>devotee</member>
+			</li>
+			<li>
+				<ideoName>Oath</ideoName>
+				<theme>oath</theme>
+				<adjective>oathbound</adjective>
+				<member>oathsworn</member>
+			</li>
+			<li>
+				<ideoName>Void</ideoName>
+				<theme>void</theme>
+				<adjective>voidtouched</adjective>
+				<member>voidtouched</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+</Defs>

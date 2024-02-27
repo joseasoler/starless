@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>STLS_Namer_Master_Common</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>MasterLastName(p=4)->[masterNameStart][masterNameMiddle][masterNameEnd]</li>
+				<li>MasterLastName->[masterNameStart][masterNameMiddle]</li>
+
+				<li>MasterFirstNameFemale->[masterNameStart][masterFirstNameMiddle][masterNameFemaleEnd]</li>
+				<li>MasterFirstNameFemale->[masterNameStart][masterNameFemaleEnd]</li>
+				<li>MasterFirstNameFemale->[masterNameEnd][masterNameFemaleEnd]</li>
+
+				<li>MasterFirstNameMale->[masterNameStart][masterFirstNameMiddle][masterNameMaleEnd]</li>
+				<li>MasterFirstNameMale->[masterNameStart][masterNameMaleEnd]</li>
+				<li>MasterFirstNameMale->[masterNameEnd][masterNameMaleEnd]</li>
+
+				<!-- Start never ends with a vowel -->
+				<li>masterNameStart->ab</li>
+				<li>masterNameStart->am</li>
+				<li>masterNameStart->aan</li>
+				<li>masterNameStart->azat</li>
+				<li>masterNameStart->b</li>
+				<li>masterNameStart->br</li>
+				<li>masterNameStart->bran</li>
+				<li>masterNameStart->caan</li>
+				<li>masterNameStart->cain</li>
+				<li>masterNameStart->cait</li>
+				<li>masterNameStart->dan</li>
+				<li>masterNameStart->dr</li>
+				<li>masterNameStart->drak</li>
+				<li>masterNameStart->fl</li>
+				<li>masterNameStart->fr</li>
+				<li>masterNameStart->fus</li>
+				<li>masterNameStart->gangr</li>
+				<li>masterNameStart->geh</li>
+				<li>masterNameStart->gor</li>
+				<li>masterNameStart->k</li>
+				<li>masterNameStart->kal</li>
+				<li>masterNameStart->kalam</li>
+				<li>masterNameStart->kl</li>
+				<li>masterNameStart->kars</li>
+				<li>masterNameStart->kor</li>
+				<li>masterNameStart->kr</li>
+				<li>masterNameStart->lawy</li>
+				<li>masterNameStart->m</li>
+				<li>masterNameStart->malk</li>
+				<li>masterNameStart->mas</li>
+				<li>masterNameStart->nosf</li>
+				<li>masterNameStart->nyarl</li>
+				<li>masterNameStart->rav</li>
+				<li>masterNameStart->s</li>
+				<li>masterNameStart->seph</li>
+				<li>masterNameStart->ser</li>
+				<li>masterNameStart->shab</li>
+				<li>masterNameStart->shub</li>
+				<li>masterNameStart->shug</li>
+				<li>masterNameStart->sk</li>
+				<li>masterNameStart->skem</li>
+				<li>masterNameStart->skig</li>
+				<li>masterNameStart->t</li>
+				<li>masterNameStart->tem</li>
+				<li>masterNameStart->terr</li>
+				<li>masterNameStart->trem</li>
+				<li>masterNameStart->tzil</li>
+				<li>masterNameStart->tzim</li>
+				<li>masterNameStart->tzal</li>
+				<li>masterNameStart->v</li>
+				<li>masterNameStart->var</li>
+				<li>masterNameStart->vl</li>
+				<li>masterNameStart->war</li>
+				<li>masterNameStart->wor</li>
+				<li>masterNameStart->y</li>
+				<li>masterNameStart->ym</li>
+				<li>masterNameStart->z</li>
+
+				<!-- Middle is always surrounded by vowels -->
+				<li>masterNameMiddle(p=4)->a</li>
+				<li>masterNameMiddle(p=4)->e</li>
+				<li>masterNameMiddle(p=4)->i</li>
+				<li>masterNameMiddle(p=4)->o</li>
+				<li>masterNameMiddle(p=4)->u</li>
+				<li>masterNameMiddle->ai</li>
+				<li>masterNameMiddle->ala</li>
+				<li>masterNameMiddle->aro</li>
+				<li>masterNameMiddle->au</li>
+				<li>masterNameMiddle->ei</li>
+				<li>masterNameMiddle->eka</li>
+				<li>masterNameMiddle->ethu</li>
+				<li>masterNameMiddle->eu</li>
+				<li>masterNameMiddle->ia</li>
+				<li>masterNameMiddle->isha</li>
+				<li>masterNameMiddle->ito</li>
+				<li>masterNameMiddle->oda</li>
+				<li>masterNameMiddle->uku</li>
+				<li>masterNameMiddle->uro</li>
+
+				<!-- End never begin with vowels -->
+				<li>masterNameEnd->cul</li>
+				<li>masterNameEnd->d</li>
+				<li>masterNameEnd->dah</li>
+				<li>masterNameEnd->dath</li>
+				<li>masterNameEnd->dhra</li>
+				<li>masterNameEnd->doth</li>
+				<li>masterNameEnd->ff</li>
+				<li>masterNameEnd->hal</li>
+				<li>masterNameEnd->hath</li>
+				<li>masterNameEnd->him</li>
+				<li>masterNameEnd->hoth</li>
+				<li>masterNameEnd->jah</li>
+				<li>masterNameEnd->kath</li>
+				<li>masterNameEnd->koth</li>
+				<li>masterNameEnd->l</li>
+				<li>masterNameEnd->leth</li>
+				<li>masterNameEnd->loth</li>
+				<li>masterNameEnd->mi</li>
+				<li>masterNameEnd->n</li>
+				<li>masterNameEnd->na</li>
+				<li>masterNameEnd->nath</li>
+				<li>masterNameEnd->nna</li>
+				<li>masterNameEnd->noth</li>
+				<li>masterNameEnd->pius</li>
+				<li>masterNameEnd->radu</li>
+				<li>masterNameEnd->raic</li>
+				<li>masterNameEnd->ranth</li>
+				<li>masterNameEnd->rath</li>
+				<li>masterNameEnd->ratu</li>
+				<li>masterNameEnd->ratuh</li>
+				<li>masterNameEnd->re</li>
+				<li>masterNameEnd->reus</li>
+				<li>masterNameEnd->ro</li>
+				<li>masterNameEnd->roth</li>
+				<li>masterNameEnd->roth</li>
+				<li>masterNameEnd->rue</li>
+				<li>masterNameEnd->sce</li>
+				<li>masterNameEnd->selah</li>
+				<li>masterNameEnd->t</li>
+				<li>masterNameEnd->te</li>
+				<li>masterNameEnd->teus</li>
+				<li>masterNameEnd->thelah</li>
+				<li>masterNameEnd->v</li>
+				<li>masterNameEnd->vent</li>
+				<li>masterNameEnd->zelah</li>
+
+				<li>masterFirstNameMiddle->an</li>
+				<li>masterFirstNameMiddle->ar</li>
+				<li>masterFirstNameMiddle->az</li>
+				<li>masterFirstNameMiddle->ik</li>
+				<li>masterFirstNameMiddle->is</li>
+				<li>masterFirstNameMiddle->ok</li>
+				<li>masterFirstNameMiddle->ol</li>
+				<li>masterFirstNameMiddle->on</li>
+				<li>masterFirstNameMiddle->os</li>
+				
+				<!-- Start with vowels. Favor ending in a, o, l, n. -->
+				<li>masterNameFemaleEnd(p=5)->a</li>
+				<li>masterNameFemaleEnd->al</li>
+				<li>masterNameFemaleEnd->an</li>
+				<li>masterNameFemaleEnd->ao</li>
+				<li>masterNameFemaleEnd->aol</li>
+				<li>masterNameFemaleEnd->aon</li>
+				<li>masterNameFemaleEnd(p=5)->o</li>
+				<li>masterNameFemaleEnd->ol</li>
+				<li>masterNameFemaleEnd->on</li>
+				<li>masterNameFemaleEnd->oa</li>
+				<li>masterNameFemaleEnd->oal</li>
+				<li>masterNameFemaleEnd->oan</li>
+
+				<!-- Ends never begin with vowels. Favor ending in i, u, k, t. -->
+				<li>masterNameMaleEnd(p=5)->i</li>
+				<li>masterNameMaleEnd->ik</li>
+				<li>masterNameMaleEnd->it</li>
+				<li>masterNameMaleEnd->iu</li>
+				<li>masterNameMaleEnd->iuk</li>
+				<li>masterNameMaleEnd->iut</li>
+				<li>masterNameMaleEnd(p=5)->u</li>
+				<li>masterNameMaleEnd->uk</li>
+				<li>masterNameMaleEnd->ut</li>
+				<li>masterNameMaleEnd->ui</li>
+				<li>masterNameMaleEnd->uik</li>
+				<li>masterNameMaleEnd->uit</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

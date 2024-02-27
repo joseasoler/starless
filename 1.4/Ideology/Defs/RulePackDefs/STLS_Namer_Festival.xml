@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Based on NamerFestivalGlobal -->
+	<RulePackDef>
+		<defName>STLS_Namer_Festival</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>festivalName(p=2)->[memeAdjective] [celebrationOrTribute]</li>
+				<li>festivalName->[chosenAdjective] [celebrationOrTribute]</li>
+
+				<li>festivalName->[celebrationOrTributeConnector] [chosenTheme]</li>
+				<li>festivalName->[celebrationOrTributeConnector] [keyDeity]</li>
+				<li>festivalName->[celebrationOrTributeConnector] [memeConcept]</li>
+				<li>festivalName->[celebrationOrTributeConnector] [chosenIdeoName]</li>
+
+				<li>celebrationOrTribute->[celebrationNoun]</li>
+				<li>celebrationOrTribute->[tributeNoun]</li>
+
+				<li>celebrationOrTributeConnector->[celebrationNoun] of</li>
+				<li>celebrationOrTributeConnector->[tributeNoun] to</li>
+
+				<li>celebrationNoun->advent</li>
+				<li>celebrationNoun->celebration</li>
+				<li>celebrationNoun->conclave</li>
+				<li>celebrationNoun->gathering</li>
+				<li>celebrationNoun->reunion</li>
+				<li>celebrationNoun->worship</li>
+
+				<li>tributeNoun->homage</li>
+				<li>tributeNoun->obeisance</li>
+				<li>tributeNoun->subservience</li>
+				<li>tributeNoun->tribute</li>
+				<li>tributeNoun->tithe</li>
+
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

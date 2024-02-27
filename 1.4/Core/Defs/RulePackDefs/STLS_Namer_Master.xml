@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>STLS_Namer_Master_Female</defName>
+		<include>
+			<li>STLS_Namer_Master_Common</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[MasterFirstNameFemale] [MasterLastName]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>STLS_Namer_Master_Male</defName>
+		<include>
+			<li>STLS_Namer_Master_Common</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[MasterFirstNameMale] [MasterLastName]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+
+</Defs>

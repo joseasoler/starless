@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Based on LeaderTitleMaker_GlobalStructure. -->
+	<RulePackDef>
+		<defName>STLS_Namer_LeaderTitle</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle(p=5)->[memeLeaderAdjective] [cultureLeaderNoun]</li>
+				<li>r_leaderTitle(p=2)->[cultureLeaderAdjective] [memeLeaderNoun]</li>
+				<li>r_leaderTitle(p=1)->[memeLeaderAdjective] [memeLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective(p=4)->master</li>
+				<li>cultureLeaderAdjective->antediluvian</li>
+				<li>cultureLeaderAdjective->first</li>
+				<li>cultureLeaderAdjective->prime</li>
+
+				<li>cultureLeaderNoun(p=4)->master</li>
+				<li>cultureLeaderNoun(p=2)->overlord</li>
+				<li>cultureLeaderNoun->drinker</li>
+				<li>cultureLeaderNoun->elder</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

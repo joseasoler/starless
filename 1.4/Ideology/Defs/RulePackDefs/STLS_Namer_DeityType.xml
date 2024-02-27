@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Based on DeityTypeMakerGlobal. -->
+	<RulePackDef>
+		<defName>STLS_Namer_DeityType</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityType->[master] of [memeConcept]</li>
+				<li>master(p=7)->Grandmaster</li>
+				<li>master->Overseer</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

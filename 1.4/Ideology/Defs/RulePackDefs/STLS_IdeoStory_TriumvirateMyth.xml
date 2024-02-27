@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--
+	Roughly based on TheistMyth. The original segments are not used due to grand masters being entirely different from
+	vanilla deities. Many messages there are not appropriate so they are replaced with mod-specific ones.
+	-->
+	<IdeoStoryPatternDef>
+		<defName>STLS_IdeoStory_TriumvirateMyth</defName>
+		<segments>
+			<li>starlessCreation</li>
+			<li>starlessMasterEpisode0</li>
+			<li>starlessMasterEpisode1</li>
+			<li>starlessMasterEpisode2</li>
+		</segments>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- Generic creation. -->
+				<li>starlessCreation->Employing long-forgotten ancient rites, the ancient triumvirate rescued the chosen [memberNamePlural] from the accursed sunlight's grasp.</li>
+				<li>starlessCreation->The founders of the ancient triumvirate were the first to ascend to the pinnacle of blood power.</li>
+				<li>starlessCreation->The ancient masters assumed control of the [place_name] as it was their divine prerrogative.</li>
+				<li>starlessCreation->Following a relentless millennia-long struggle for dominance, the ancient masters forged a pact to jointly govern the [place_name].</li>
+
+				<!-- Episode for each master of the triunvirate. -->
+				<li>starlessMasterEpisode0->[deity0_type] [deity0_name] gazed upon the [memberNamePlural], and [SupremeAuthoritySentence] over them.</li>
+				<li>SupremeAuthoritySentence->asserted supreme authority</li>
+				<li>SupremeAuthoritySentence->enforced unwavering obedience</li>
+				<li>SupremeAuthoritySentence->imposed unquestioning loyalty</li>
+				<li>SupremeAuthoritySentence->proclaimed divine dominion</li>
+
+				<li>starlessMasterEpisode1->[deity1_type] [deity1_name] [starlessMasterEpisode]</li>
+				<li>starlessMasterEpisode2->[deity2_type] [deity2_name] [starlessMasterEpisode]</li>
+				<li>starlessMasterEpisode(uses=1)->ordained the rightful order of the cosmos, wherein thralls dutifully serve their masters.</li>
+				<li>starlessMasterEpisode(uses=1)->demanded the ultimate sacrifice from the [memberNamePlural], compelling them to offer their boundless loyalty.</li>
+				<li>starlessMasterEpisode(uses=1)->reshaped the [place_name], raising obsidian citadels from the depths of the void, as the [memberNamePlural] looked on in awe.</li>
+				<li>starlessMasterEpisode(uses=1)->weaved a tapestry of dread and desire, ensnaring the minds of the [memberNamePlural].</li>
+				<li>starlessMasterEpisode(uses=1)->granted the [memberNamePlural] the gift of immortality, binding their fates to the power of the blood.</li>
+				<li>starlessMasterEpisode(uses=1)->whispered forbidden secrets in the hearts of the [memberNamePlural], compelling them to carry out dark rituals.</li>
+
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+
+</Defs>

@@ -3,8 +3,5 @@
 	<v1.4>
 		<li>1.4/Core</li>
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.4/Ideology</li>
-		<li IfModActive="Ludeon.RimWorld.Royalty">1.4/Royalty</li>
-		<li IfModActive="RedMattis.BigSmall.Core">1.4/Mod_BigAndSmallGenes</li>
-		<li IfModActive="sarg.alphagenes">1.4/Mod_AlphaGenes</li>
 	</v1.4>
 </loadFolders>
