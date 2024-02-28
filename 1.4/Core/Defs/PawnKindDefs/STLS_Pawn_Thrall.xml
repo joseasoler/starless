@@ -51,6 +51,9 @@
 		<techHediffsTags>
 			<li>Simple</li>
 		</techHediffsTags>
+		<techHediffsDisallowTags>
+			<li>PainCauser</li>
+		</techHediffsDisallowTags>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="STLS_Pawn_Thrall_Base">
