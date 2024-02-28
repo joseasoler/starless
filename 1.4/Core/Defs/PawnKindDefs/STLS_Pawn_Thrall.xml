@@ -49,9 +49,7 @@
 		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
 		<techHediffsTags>
-			<li>Poor</li>
 			<li>Simple</li>
-			<li>ImplantEmpireCommon</li>
 		</techHediffsTags>
 	</PawnKindDef>
 
@@ -105,12 +103,15 @@
 		<techHediffsChance>0.35</techHediffsChance>
 		<techHediffsMoney>700~1200</techHediffsMoney>
 		<techHediffsMaxAmount>2</techHediffsMaxAmount>
+		<techHediffsTags Inherit="False">
+			<li>Advanced</li>
+		</techHediffsTags>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="STLS_Pawn_Thrall_MidTier">
 		<defName>STLS_Pawn_Thrall_Brawler</defName>
 		<label>brawler thrall</label>
-		<combatPower>80</combatPower>
+		<combatPower>90</combatPower>
 		<!-- Possessions. -->
 		<apparelMoney>800~1200</apparelMoney>
 		<apparelRequired>
@@ -216,13 +217,9 @@
 			<li>SpacerMilitary</li>
 			<li>BeltDefensePop</li>
 		</apparelTags>
-		<techHediffsChance>1</techHediffsChance>
+		<techHediffsChance>0.75</techHediffsChance>
 		<techHediffsMoney>1000~4000</techHediffsMoney>
 		<techHediffsMaxAmount>4</techHediffsMaxAmount>
-		<techHediffsTags>
-			<li>Advanced</li>
-			<li>ImplantEmpireCommon</li>
-		</techHediffsTags>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="STLS_Pawn_Thrall_HighTier">
