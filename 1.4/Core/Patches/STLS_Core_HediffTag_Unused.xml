@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Core Bionics not used by the starless or their thralls. -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Joywire"]/techHediffsTags</xpath>
+		<value>
+			<li>STLS_HediffTag_Unused</li>
+		</value>
+	</Operation>
+</Patch>

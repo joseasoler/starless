@@ -51,9 +51,6 @@
 		<techHediffsTags>
 			<li>Simple</li>
 		</techHediffsTags>
-		<techHediffsDisallowTags>
-			<li>PainCauser</li>
-		</techHediffsDisallowTags>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="STLS_Pawn_Thrall_Base">
@@ -223,6 +220,9 @@
 		<techHediffsChance>0.75</techHediffsChance>
 		<techHediffsMoney>1000~4000</techHediffsMoney>
 		<techHediffsMaxAmount>4</techHediffsMaxAmount>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="STLS_Pawn_Thrall_HighTier">
@@ -236,7 +236,7 @@
 		<skills>
 			<li>
 				<skill>Shooting</skill>
-				<range>11~16</range>
+				<range>9~14</range>
 			</li>
 		</skills>
 		<disallowedTraits>
@@ -257,7 +257,7 @@
 		<skills>
 			<li>
 				<skill>Melee</skill>
-				<range>11~16</range>
+				<range>9~14</range>
 			</li>
 		</skills>
 	</PawnKindDef>

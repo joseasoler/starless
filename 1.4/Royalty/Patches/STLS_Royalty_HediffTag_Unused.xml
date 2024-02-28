@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Royalty Bionics not used by the starless or their thralls. -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="CircadianHalfCycler"]</xpath>
+		<value>
+			<techHediffsTags>
+				<li>STLS_HediffTag_Unused</li>
+			</techHediffsTags>
+		</value>
+	</Operation>
+</Patch>

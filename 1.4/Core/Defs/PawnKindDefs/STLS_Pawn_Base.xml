@@ -15,6 +15,12 @@
 		<apparelDisallowTags>
 			<li>Western</li>
 		</apparelDisallowTags>
-
+		<techHediffsDisallowTags>
+			<li>AdvancedWeapon</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">DrillArm</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">FieldHand</li>
+			<li>PainCauser</li>
+			<li>STLS_HediffTag_Unused</li>
+		</techHediffsDisallowTags>
 	</PawnKindDef>
 </Defs>

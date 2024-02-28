@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="STLS_Pawn_Base">
+		<defName>STLS_Pawn_Master_Melee</defName>
+		<label>starless master</label>
+		<combatPower>240</combatPower>
+		<!-- Background. -->
+		<nameMaker>STLS_Namer_Master_Male</nameMaker>
+		<nameMakerFemale>STLS_Namer_Master_Female</nameMakerFemale>
+		<initialResistanceRange>28~52</initialResistanceRange>
+		<initialWillRange>21~34</initialWillRange>
+		<disallowedTraits>
+			<li>Ascetic</li>
+			<li>BodyPurist</li>
+			<li>Kind</li>
+			<li>Nudist</li>
+			<li>Pyromaniac</li>
+			<li>Wimp</li>
+		</disallowedTraits>
+		<maxPerGroup>1</maxPerGroup>
+		<allowOldAgeInjuries>false</allowOldAgeInjuries>
+		<factionLeader>true</factionLeader>
+		<backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
+		<chronologicalAgeRange>900~2200</chronologicalAgeRange>
+		<!-- Xenotype. -->
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Sanguophage>999</Sanguophage>
+				<VRE_Strigoi MayRequire="vanillaracesexpanded.sanguophage">333</VRE_Strigoi>
+				<VRE_Ekkimian MayRequire="vanillaracesexpanded.sanguophage">333</VRE_Ekkimian>
+				<VRE_Bruxa MayRequire="vanillaracesexpanded.sanguophage">111</VRE_Bruxa>
+			</xenotypeChances>
+		</xenotypeSet>
+		<!-- Possessions. -->
+		<invFoodDef>MealLavish</invFoodDef>
+		<invNutrition>3</invNutrition>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0.35</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<itemQuality>Excellent</itemQuality>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">STLS_WeaponTag_UltratechMeleeWeapon</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>11~16</range>
+			</li>
+		</skills>
+		<weaponMoney>5000~8000</weaponMoney>
+		<biocodeWeaponChance>1.0</biocodeWeaponChance>
+		<apparelColor>(40,20,20)</apparelColor>
+		<apparelMoney>12000~20000</apparelMoney>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphract</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphract</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>3000~8000</techHediffsMoney>
+		<techHediffsMaxAmount>8</techHediffsMaxAmount>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>ImplantEmpireCommon</li>
+			<li>ImplantEmpireRoyal</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+</Defs>

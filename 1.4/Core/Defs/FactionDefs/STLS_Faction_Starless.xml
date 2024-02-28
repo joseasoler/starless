@@ -29,6 +29,7 @@ This faction is notorious for their ruthless raids against rimworlds, aimed at a
 		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
 		<maxCountAtGameStart>1</maxCountAtGameStart>
 		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1111</configurationListOrderPriority>
 		<techLevel>Ultra</techLevel>
 		<basicMemberKind>STLS_Pawn_Thrall_Destitute</basicMemberKind>
 		<allowedCultures>
