@@ -2,7 +2,7 @@
 <Defs>
 
 	<FactionDef ParentName="FactionBase">
-		<defName>STLS_Faction</defName>
+		<defName>STLS_Faction_Starless</defName>
 		<label>starless</label>
 		<pawnSingular>starless</pawnSingular>
 		<pawnsPlural>starless</pawnsPlural>
@@ -30,10 +30,9 @@ This faction is notorious for their ruthless raids against rimworlds, aimed at a
 		<maxCountAtGameStart>1</maxCountAtGameStart>
 		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 		<techLevel>Ultra</techLevel>
-		<!-- ToDo: Set to thrall. -->
-		<basicMemberKind>Sanguophage</basicMemberKind>
+		<basicMemberKind>STLS_Pawn_Thrall_Destitute</basicMemberKind>
 		<allowedCultures>
-			<li>STLS_Culture</li>
+			<li>STLS_Culture_Starless</li>
 		</allowedCultures>
 		<requiredMemes>
 			<li>Bloodfeeding</li>
@@ -93,22 +92,7 @@ This faction is notorious for their ruthless raids against rimworlds, aimed at a
 		</apparelStuffFilter>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
-				<Dirtmole>0.02</Dirtmole>
-				<Neanderthal>0.02</Neanderthal>
-				<Pigskin>0.02</Pigskin>
-				<Waster>0.02</Waster>
-				<Yttakin>0.02</Yttakin>
-				<AG_Animusen MayRequire="sarg.alphagenes">0.02</AG_Animusen>
-				<BS_Dwarf MayRequire="RedMattis.BigSmall">0.03</BS_Dwarf>
-				<BS_GreatOgre MayRequire="RedMattis.BigSmall">0.01</BS_GreatOgre>
-				<BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.005</BS_Half_Jotun>
-				<BS_Ogre MayRequire="RedMattis.BigSmall">0.04</BS_Ogre>
-				<BS_Redcap MayRequire="RedMattis.BigSmall">0.005</BS_Redcap>
-				<BS_Svartalf MayRequire="RedMattis.BigSmall">0.01</BS_Svartalf>
-				<Stoneborn MayRequire="det.stoneborn">0.01</Stoneborn>
-				<VRESaurids_Saurid MayRequire="vanillaracesexpanded.saurid">0.02</VRESaurids_Saurid>
-				<VRE_Boarskin MayRequire="vanillaracesexpanded.pigskin">0.005</VRE_Boarskin>
+				<STLS_Xenotype_Thrall>999</STLS_Xenotype_Thrall>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>

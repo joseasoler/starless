@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Sanguophages do not allow fire weapons in their armies. -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword" or defName="MeleeWeapon_Zeushammer"]</xpath>
+		<value>
+			<weaponTags>
+				<li>STLS_WeaponTag_UltratechMeleeWeapon</li>
+			</weaponTags>
+		</value>
+	</Operation>
+</Patch>

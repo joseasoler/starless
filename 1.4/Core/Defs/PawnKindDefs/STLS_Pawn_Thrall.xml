@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Based on Biotech's SanguophageThrall and mercs. -->
+	<PawnKindDef ParentName="STLS_Pawn_Base" Name="STLS_Pawn_Thrall_Base" Abstract="True">
+		<!-- Backstory. -->
+		<chemicalAddictionChance>0.2</chemicalAddictionChance>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>STLS_Backstory_SpawnCategory_Thrall</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>STLS_Backstory_SpawnCategory_Thrall</li>
+				</categoriesAdulthood>
+				<commonality>0.8</commonality>
+			</li>
+			<li>
+				<categoriesChildhood>
+					<li>Offworld</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>STLS_Backstory_SpawnCategory_Thrall</li>
+				</categoriesAdulthood>
+				<commonality>0.1</commonality>
+			</li>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>STLS_Backstory_SpawnCategory_Thrall</li>
+				</categoriesAdulthood>
+				<commonality>0.1</commonality>
+			</li>
+		</backstoryFiltersOverride>
+		<!-- Possessions. -->
+		<invNutrition>1.5</invNutrition>
+		<invFoodDef>MealNutrientPaste</invFoodDef>
+		<itemQuality>Normal</itemQuality>
+		<apparelColor>(140,70,70)</apparelColor>
+		<apparelTags>
+			<li>MedievalMilitary</li>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="STLS_Pawn_Thrall_Base">
+		<defName>STLS_Pawn_Thrall_Destitute</defName>
+		<label>destitute thrall</label>
+		<combatPower>50</combatPower>
+		<!-- Backstory. -->
+		<initialResistanceRange>6~9</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
+		<!-- Possessions. -->
+		<gearHealthRange>0.7~2.3</gearHealthRange>
+		<apparelMoney>300~500</apparelMoney>
+		<apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+		<weaponMoney>300~500</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="STLS_Pawn_Thrall_Base">
+		<defName>STLS_Pawn_Thrall_Grenadier</defName>
+		<label>grenadier thrall</label>
+		<combatPower>70</combatPower>
+		<!-- Backstory. -->
+		<initialResistanceRange>8~11</initialResistanceRange>
+		<initialWillRange>2~5</initialWillRange>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<!-- Possessions. -->
+		<gearHealthRange>0.7~2.3</gearHealthRange>
+		<apparelMoney>400~700</apparelMoney>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<weaponMoney>500~600</weaponMoney>
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		<weaponTags>
+			<li>EmpireGrenadeDestructive</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="STLS_Pawn_Thrall_Base" Name="STLS_Pawn_Thrall_MidTier" Abstract="True">
+		<!-- Backstory. -->
+		<initialResistanceRange>13~19</initialResistanceRange>
+		<initialWillRange>3~5</initialWillRange>
+		<!-- Possessions. -->
+		<gearHealthRange>0.7~3.2</gearHealthRange>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<biocodeWeaponChance>0.5</biocodeWeaponChance>
+		<techHediffsChance>0.35</techHediffsChance>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsMaxAmount>2</techHediffsMaxAmount>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="STLS_Pawn_Thrall_MidTier">
+		<defName>STLS_Pawn_Thrall_Brawler</defName>
+		<label>brawler thrall</label>
+		<combatPower>80</combatPower>
+		<!-- Possessions. -->
+		<apparelMoney>800~1200</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_FirefoampopPack</li>
+		</apparelRequired>
+		<weaponMoney>500~800</weaponMoney>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<techHediffsRequired>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="STLS_Pawn_Thrall_MidTier">
+		<defName>STLS_Pawn_Thrall_Gunner</defName>
+		<label>gunner thrall</label>
+		<combatPower>85</combatPower>
+		<!-- Backstory. -->
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~14</range>
+			</li>
+		</skills>
+		<!-- Possessions. -->
+		<apparelMoney>1000~1500</apparelMoney>
+		<weaponMoney>330~650</weaponMoney>
+		<weaponTags>
+			<li>ShortShots</li>
+			<li>SimpleGun</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="STLS_Pawn_Thrall_MidTier">
+		<defName>STLS_Pawn_Thrall_Sniper</defName>
+		<label>sniper thrall</label>
+		<combatPower>110</combatPower>
+		<!-- Backstory. -->
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~16</range>
+			</li>
+		</skills>
+		<!-- Possessions. -->
+		<apparelMoney>1000~1500</apparelMoney>
+		<weaponMoney>600~800</weaponMoney>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="STLS_Pawn_Thrall_MidTier">
+		<defName>STLS_Pawn_Thrall_Heavy</defName>
+		<label>heavy weapons thrall</label>
+		<!-- Backstory. -->
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<!-- Possessions. -->
+		<combatPower>140</combatPower>
+		<apparelMoney>500~850</apparelMoney>
+		<weaponMoney>1200~1400</weaponMoney>
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<!-- Based on the stellic guard. -->
+	<PawnKindDef ParentName="STLS_Pawn_Thrall_MidTier" Name="STLS_Pawn_Thrall_HighTier" Abstract="True">
+		<combatPower>180</combatPower>
+		<!-- Background. -->
+		<initialResistanceRange>17~25</initialResistanceRange>
+		<initialWillRange>6~10</initialWillRange>
+		<!-- Possessions. -->
+		<invFoodDef>MealFine</invFoodDef>
+		<invNutrition>3</invNutrition>
+		<chemicalAddictionChance>0.03</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+		<itemQuality>Excellent</itemQuality>
+		<weaponMoney>3000~3500</weaponMoney>
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<apparelColor>(60,30,30)</apparelColor>
+		<apparelMoney>7000~10000</apparelMoney>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<apparelRequired>
+			<li>Apparel_PowerArmorHelmet</li>
+			<li>Apparel_PowerArmor</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>1000~4000</techHediffsMoney>
+		<techHediffsMaxAmount>4</techHediffsMaxAmount>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="STLS_Pawn_Thrall_HighTier">
+		<defName>STLS_Pawn_Thrall_Sharpshooter</defName>
+		<label>sharpshooter thrall</label>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>SniperRifle</li>
+			<li>SpacerGun</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>11~16</range>
+			</li>
+		</skills>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="STLS_Pawn_Thrall_HighTier">
+		<defName>STLS_Pawn_Thrall_Guardian</defName>
+		<label>guardian thrall</label>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">STLS_WeaponTag_UltratechMeleeWeapon</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+		</apparelRequired>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>11~16</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+</Defs>

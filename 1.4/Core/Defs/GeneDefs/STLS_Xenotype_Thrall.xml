@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<XenotypeDef ParentName="STLS_Xenotype_Base">
+		<defName>STLS_Xenotype_Thrall</defName>
+		<label>thrall</label>
+		<description>
+			<![CDATA[Thralls undergo the implantation of specialized xenogenes, enabling survival in the harsh environments of the Starless domains. It also renders them unable to resist the ruthless dominion of their masters.]]></description>
+		<descriptionShort>
+			<![CDATA[Thralls undergo the implantation of specialized xenogenes, enabling survival in the harsh environments of the Starless domains. It also renders them unable to resist the ruthless dominion of their masters.]]></descriptionShort>
+		<!-- ToDo: art asset -->
+		<iconPath>UI/Icons/Xenotypes/Other</iconPath>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<factionlessGenerationWeight>0.1</factionlessGenerationWeight>
+		<genes>
+			<li>Aggression_DeadCalm</li>         <!-- -1 -->
+			<li>DarkVision</li>                  <!-- -1 -->
+			<li>FireResistant</li>               <!-- -2 -->
+			<li>MaxTemp_LargeIncrease</li>       <!-- -2 -->
+			<li>MinTemp_LargeDecrease</li>       <!-- -2 -->
+			<li>MoveSpeed_Quick</li>             <!-- -3 -->
+			<li>ChemicalDependency_Psychite</li> <!-- +4 -->
+			<li>Instability_Mild</li>            <!-- +2 -->
+			<li>Sterile</li>                     <!-- +1 -->
+			<li>UVSensitivity_Intense</li>       <!-- +4 -->
+			<li>Libido_High</li>                 <!--  0 -->
+			<!-- Cosmetic genes. -->
+			<li>FacialRidges</li>
+			<li>Skin_InkBlack</li>
+			<li>Skin_LightGray</li>
+			<li>Skin_SheerWhite</li>
+			<li>Skin_SlateGray</li>
+		</genes>
+	</XenotypeDef>
+</Defs>

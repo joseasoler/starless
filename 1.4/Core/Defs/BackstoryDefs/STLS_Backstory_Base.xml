@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BackStoryDef Abstract="True" Name="STLS_Backstory_Base">
+		<disallowedTraits>
+			<Kind/>
+			<Pyromaniac/>
+		</disallowedTraits>
+	</BackStoryDef>
+
+</Defs>

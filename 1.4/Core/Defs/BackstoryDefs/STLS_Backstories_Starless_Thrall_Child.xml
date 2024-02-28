@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BackStoryDef Abstract="True" ParentName="STLS_Backstory_Thrall_Base" Name="STLS_Backstory_Thrall_Child_Base">
+		<slot>Childhood</slot>
+		<nameMaker>STLS_Namer_Thrall</nameMaker>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+	</BackStoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Abductee</defName>
+		<title>abductee</title>
+		<titleShort>abductee</titleShort>
+		<baseDesc>[PAWN_nameDef] was forcibly torn from [PAWN_possessive] parents during a starless raid.\n\n[PAWN_pronoun] clings to fleeting memories of a time when [PAWN_pronoun] felt the comforting embrace of family, the warmth of laughter, and the unburdened joy of childhood, all before the nightmare of captivity and isolation began.</baseDesc>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Bloodbag</defName>
+		<title>bloodbag</title>
+		<titleShort>bloodbag</titleShort>
+		<baseDesc>From the moment of [PAWN_possessive] birth, [PAWN_nameDef] was condemned to an existence of eternal blood-draining.\n\n[PAWN_possessive] childhood unfolded as a never-ending abyss of darkness, a world in which [PAWN_pronoun] could only grasp the biting cold and unrelenting solitude.</baseDesc>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+		<forcedTraits>
+			<Masochist/>
+			<Recluse />
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Butler</defName>
+		<title>butler</title>
+		<titleShort>butler</titleShort>
+		<baseDesc>[PAWN_nameDef] was meticulously groomed to excel in the abilities expected of the servant of a master.\n\nThe unyielding training regimen proved successful, shaping [PAWN_objective] into the ideal candidate to become the butler of one of the higher-ups in the faction's dark hierarchy.</baseDesc>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Social</li>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Psychopath />
+		</forcedTraits>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Fighter</defName>
+		<title>fighter</title>
+		<titleShort>fighter</titleShort>
+		<baseDesc>[PAWN_nameDef] was consigned to a brutal combat school mere months after [PAWN_possessive] birth.\n\n[PAWN_pronoun] endured this harrowing trial of survival of the fittest by proving [PAWN_objective]self to be among the very best, forging a reputation as a tenacious and skilled fighter.</baseDesc>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Brawler />
+		</forcedTraits>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Helper</defName>
+		<title>helper</title>
+		<titleShort>helper</titleShort>
+		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] formative years within the confines of a growth vat, where [PAWN_possessive] agility was incessantly stimulated.\n\nThe simulation centered only on physical tasks, rendering [PAWN_objective] incapable in most other areas.</baseDesc>
+		<workDisables>
+			<li>Animals</li>
+			<li>Artistic</li>
+			<li>Caring</li>
+			<li>Intellectual</li>
+			<li>ManualSkilled</li>
+			<li>Social</li>
+		</workDisables>
+		<forcedTraits>
+			<Nimble />
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Grunt</defName>
+		<title>grunt</title>
+		<titleShort>grunt</titleShort>
+		<baseDesc>[PAWN_nameDef] was raised in a specialized growth vat, meticulously designed by the overseers to stimulate [PAWN_possessive] resilience and stamina.\n\n[PAWN_pronoun] endured a relentless series of simulations, each inflicting violence, pain, and torture. This rigorous training was a preparation for [PAWN_possessive] future role as a shock troop.</baseDesc>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+		<forcedTraits>
+			<Psychopath />
+			<Tough />
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Subject</defName>
+		<title>test subject</title>
+		<titleShort>testee</titleShort>
+		<baseDesc>[PAWN_nameDef] was subjected to a barrage of experimental therapies and mind-altering drugs from a tender age.\n\nThe endless testing took a toll on [PAWN_possessive] mind and body, but [PAWN_pronoun] managed to glean valuable knowledge from the facility overseers.</baseDesc>
+		<forcedTraits>
+			<DrugDesire>2</DrugDesire>
+			<Wimp />
+		</forcedTraits>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Vatgrown</defName>
+		<title>vatgrown</title>
+		<titleShort>vatgrown</titleShort>
+		<baseDesc>[PAWN_nameDef] was conceived using anonymous genetic material and experienced extremely accelerated aging in a growth vat.\n\n[PAWN_pronoun] was immersed in a virtual reality simulation that provided valuable knowledge in certain areas but remained devoid of the love and warmth that other children know.</baseDesc>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>-2</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</BackstoryDef>
+
+</Defs>

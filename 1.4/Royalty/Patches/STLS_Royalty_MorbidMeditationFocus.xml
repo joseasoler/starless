@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Starless backstories enable the Morbid meditation focus. -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			/Defs/MeditationFocusDef[defName="Morbid"]
+		</xpath>
+		<value>
+			<requiredBackstoriesAny>
+				<li>
+					<categoryName>STLS_Backstory_SpawnCategory_Starless</categoryName>
+					<slot>Childhood</slot>
+				</li>
+			</requiredBackstoriesAny>
+		</value>
+	</Operation>
+</Patch>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="STLS_Pawn_Base" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>STLS_Faction_Starless</defaultFactionType>
+		<!-- Backstory. -->
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>40</maxGenerationAge>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<!-- Possessions. -->
+		<apparelDisallowTags>
+			<li>Western</li>
+		</apparelDisallowTags>
+
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BackStoryDef Abstract="True" ParentName="STLS_Backstory_Base" Name="STLS_Backstory_Thrall_Base">
+		<spawnCategories>
+			<li>STLS_Backstory_SpawnCategory_Starless</li>
+			<li>STLS_Backstory_SpawnCategory_Thrall</li>
+		</spawnCategories>
+	</BackStoryDef>
+
+</Defs>

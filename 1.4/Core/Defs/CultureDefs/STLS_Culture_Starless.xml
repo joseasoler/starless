@@ -2,9 +2,9 @@
 <Defs>
 
 	<CultureDef>
-		<defName>STLS_Culture</defName>
+		<defName>STLS_Culture_Starless</defName>
 		<label>starless</label>
-		<description>Traditions followed by the servants of the bloodfeeder masters reigning over the emptiness between stars.</description>
+		<description><![CDATA[Traditions followed by the servants of the bloodfeeder masters reigning over the emptiness between stars.]]></description>
 		<!-- Used by ideology descriptions. -->
 		<pawnNameMaker>STLS_Namer_Master_Male</pawnNameMaker>
 		<pawnNameMakerFemale>STLS_Namer_Master_Female</pawnNameMakerFemale>
@@ -75,7 +75,7 @@
 				<baseWeight>0.2</baseWeight>
 				<weightFactor>1</weightFactor>
 			</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">
+			<li>
 				<tag>Furskin</tag>
 				<baseWeight>1</baseWeight>
 				<weightFactor>1</weightFactor>

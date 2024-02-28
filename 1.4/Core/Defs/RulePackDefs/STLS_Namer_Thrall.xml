@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>STLS_Namer_Thrall</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=3)->[firstName] [lastName]</li>
+				<li>r_name->[firstName] '[AdjectiveAny]' [lastName]</li>
+
+				<li>firstName->[Letter][Letter]</li>
+				<li>lastName->[Digit][Digit]-[Digit][Digit]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
