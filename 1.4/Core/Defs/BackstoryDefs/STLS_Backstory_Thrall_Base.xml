@@ -3,8 +3,9 @@
 
 	<BackStoryDef Abstract="True" ParentName="STLS_Backstory_Base" Name="STLS_Backstory_Thrall_Base">
 		<spawnCategories>
-			<li>STLS_Backstory_SpawnCategory_Starless</li>
 			<li>STLS_Backstory_SpawnCategory_Thrall</li>
+			<!-- Grants the morbid meditation focus to pawns of the starless faction. -->
+			<li MayRequire="Ludeon.RimWorld.Royalty">STLS_Backstory_SpawnCategory_Starless</li>
 		</spawnCategories>
 	</BackStoryDef>
 

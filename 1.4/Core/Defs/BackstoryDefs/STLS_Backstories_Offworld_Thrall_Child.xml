@@ -7,16 +7,6 @@
 		<titleShort>escapee</titleShort>
 		<baseDesc>[PAWN_nameDef] endured a harrowing childhood as a starless thrall until [PAWN_pronoun] managed to escape.\n\nThis experience left [PAWN_objective] with a burning desire for revenge.</baseDesc>
 		<slot>Childhood</slot>
-		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
-		</skillGains>
 		<forcedTraits>
 			<Bloodlust />
 		</forcedTraits>

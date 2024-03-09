@@ -64,7 +64,6 @@
 			<li>IndustrialAdvanced</li>
 			<li>IndustrialMilitaryAdvanced</li>
 			<li>SpacerMilitary</li>
-			<li>BeltDefensePop</li>
 		</apparelTags>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>3000~8000</techHediffsMoney>
