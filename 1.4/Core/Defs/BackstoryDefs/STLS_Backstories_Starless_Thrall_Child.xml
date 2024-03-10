@@ -42,7 +42,6 @@
 		<VRESaurids_Saurid MayRequire="vanillaracesexpanded.saurid">3</VRESaurids_Saurid>
 		<VRE_Boarskin MayRequire="vanillaracesexpanded.pigskin">1</VRE_Boarskin>
 	</firstXenotype>
-	-->
 
 	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
 		<defName>STLS_Backstory_Thrall_Child_Baseliner</defName>
@@ -51,6 +50,7 @@
 		<baseDesc><![CDATA[Anonymous genetic material from two standard thralls was used to create [PAWN_nameDef]. After an unremarkable growth vat process, [PAWN_pronoun] joined the ranks of [PAWN_possessive] brethren.]]>
 		</baseDesc>
 	</BackstoryDef>
+	-->
 
 	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
 		<defName>STLS_Backstory_Thrall_Child_Experiment</defName>

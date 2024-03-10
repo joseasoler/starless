@@ -73,13 +73,7 @@ This faction is notorious for their ruthless raids against rimworlds, aimed at a
 				<categories>
 					<li>STLS_Backstory_SpawnCategory_Thrall</li>
 				</categories>
-				<commonality>0.95</commonality>
-			</li>
-			<li>
-				<categories>
-					<li>Offworld</li>
-				</categories>
-				<commonality>0.05</commonality>
+				<commonality>1.0</commonality>
 			</li>
 		</backstoryFilters>
 		<apparelStuffFilter>
