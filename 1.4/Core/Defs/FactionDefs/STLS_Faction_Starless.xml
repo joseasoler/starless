@@ -86,8 +86,9 @@ This faction is notorious for their ruthless raids against rimworlds, aimed at a
 			</thingDefs>
 		</apparelStuffFilter>
 		<xenotypeSet Inherit="False">
+			<!-- Genetics are determined by thrall backgrounds, or by PawnKindDefs in the case of the masters. -->
 			<xenotypeChances>
-				<STLS_Xenotype_Thrall>999</STLS_Xenotype_Thrall>
+				<Baseliner>999</Baseliner>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>

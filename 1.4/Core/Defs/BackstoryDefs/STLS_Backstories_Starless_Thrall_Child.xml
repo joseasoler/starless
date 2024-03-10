@@ -9,8 +9,24 @@
 		<modExtensions>
 			<li Class="Starless.Extensions.BackgroundXenogenes">
 				<xenogenes>
-					<li>Aggression_DeadCalm</li> <!-- -1 -->
-					<li>Sterile</li>             <!-- +1 -->
+					<li>Aggression_DeadCalm</li>         <!-- -1 -->
+					<li>DarkVision</li>                  <!-- -1 -->
+					<li>MaxTemp_LargeIncrease</li>       <!-- -2 -->
+					<li>MinTemp_LargeDecrease</li>       <!-- -2 -->
+					<li>MoveSpeed_Quick</li>             <!-- -3 -->
+					<li>Superclotting</li>               <!-- -1 -->
+
+					<li>ChemicalDependency_Psychite</li> <!-- +4 -->
+					<li>Instability_Mild</li>            <!-- +2 -->
+					<li>UVSensitivity_Mild</li>          <!-- +3 -->
+					<li>Sterile</li>                     <!-- +1 -->
+
+					<li>FacialRidges</li>
+					<li>Libido_High</li>
+					<li>Skin_InkBlack</li>
+					<li>Skin_LightGray</li>
+					<li>Skin_SheerWhite</li>
+					<li>Skin_SlateGray</li>
 				</xenogenes>
 			</li>
 		</modExtensions>
