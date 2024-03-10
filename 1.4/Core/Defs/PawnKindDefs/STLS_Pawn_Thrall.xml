@@ -5,35 +5,6 @@
 	<PawnKindDef ParentName="STLS_Pawn_Base" Name="STLS_Pawn_Thrall_Base" Abstract="True">
 		<!-- Backstory. -->
 		<chemicalAddictionChance>0.2</chemicalAddictionChance>
-		<backstoryFiltersOverride>
-			<li>
-				<categoriesChildhood>
-					<li>STLS_Backstory_SpawnCategory_Thrall</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>STLS_Backstory_SpawnCategory_Thrall</li>
-				</categoriesAdulthood>
-				<commonality>0.8</commonality>
-			</li>
-			<li>
-				<categoriesChildhood>
-					<li>Offworld</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>STLS_Backstory_SpawnCategory_Thrall</li>
-				</categoriesAdulthood>
-				<commonality>0.1</commonality>
-			</li>
-			<li>
-				<categoriesChildhood>
-					<li>Tribal</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>STLS_Backstory_SpawnCategory_Thrall</li>
-				</categoriesAdulthood>
-				<commonality>0.1</commonality>
-			</li>
-		</backstoryFiltersOverride>
 		<!-- Possessions. -->
 		<invNutrition>1.5</invNutrition>
 		<invFoodDef>MealNutrientPaste</invFoodDef>
