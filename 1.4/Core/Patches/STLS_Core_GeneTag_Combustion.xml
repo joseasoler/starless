@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/GeneDef[defName="FireSpew"]/exclusionTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/GeneDef[defName="FireSpew"]/exclusionTags</xpath>
+			<value>
+				<li>STLS_GeneTag_Combustion</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/GeneDef[defName="FireSpew"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>STLS_GeneTag_Combustion</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+	</Operation>
+</Patch>

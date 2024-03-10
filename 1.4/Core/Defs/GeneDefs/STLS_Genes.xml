@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef ParentName="GeneHealingRateBase">
+		<defName>STLS_Gene_Chemsuppression</defName>
+		<label>Chem-suppression</label>
+		<labelShortAdj>slow-heal</labelShortAdj>
+		<description><![CDATA[This gene prevents chemfuel synthesis by the host's cells, suppressing fire-related abilities.]]></description>
+		<!-- ToDo: art asset. -->
+		<iconPath>UI/Icons/Genes/Gene_WoundHealingRateSlow</iconPath>
+		<displayOrderInCategory>30</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<exclusionTags>
+			<li>STLS_GeneTag_Combustion</li>
+		</exclusionTags>
+	</GeneDef>
+
+</Defs>
