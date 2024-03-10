@@ -13,14 +13,22 @@
 		<DebugSymbols>false</DebugSymbols>
 		<Optimize>true</Optimize>
 		<WarningLevel>5</WarningLevel>
+		<NoWarn>CS2002</NoWarn> <!-- Disable warning coming from krafs publicizer. -->
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<Deterministic>true</Deterministic>
-		<OutputPath>..\$(Configuration)\Assemblies\</OutputPath>
+		<OutputPath>..\$(Configuration)\Core\Assemblies\</OutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Compile Include="BackstoryGenesHandler.cs" />
+		<Compile Include="Extensions\BackgroundEndogenes.cs" />
+		<Compile Include="Extensions\BackgroundXenogenes.cs" />
+		<Compile Include="HarmonyHandler.cs" />
+		<Compile Include="HarmonyPatches\PawnGenerator_GenerateGenes_Patch.cs" />
 		<Compile Include="Properties\AssemblyInfo.cs" />
+		<Compile Include="Report.cs" />
+		<Compile Include="StarlessMod.cs" />
 
 		<Reference Include="System" />
 		<Reference Include="System.Xml" />
@@ -33,7 +41,15 @@
 			<Private>False</Private>
 		</Reference>
 
+		<PackageReference Include="Krafs.Publicizer" Version="2.2.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 	</ItemGroup>
 
+	<ItemGroup>
+		<!-- Dummy parent generation for hybrids. -->
+		<Publicize Include="Assembly-CSharp:RimWorld.Pawn_GeneTracker.xenotype" />
+	</ItemGroup>
 	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

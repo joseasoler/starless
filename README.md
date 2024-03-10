@@ -4,6 +4,10 @@
 
 [Starless](https://steamcommunity.com/sharedfiles/filedetails/?id=ToDo) is a [RimWorld](https://rimworldgame.com/) mod... ToDo
 
+## Mod compatibility
+
+**Endling (Last Of Their Kind):** Thralls never know who are their relatives, and the masters forgot them long ago.
+
 Contributions
 ---
 

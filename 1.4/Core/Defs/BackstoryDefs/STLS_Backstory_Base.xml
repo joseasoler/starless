@@ -2,6 +2,9 @@
 <Defs>
 
 	<BackStoryDef Abstract="True" Name="STLS_Backstory_Base">
+		<forcedTraits>
+			<Aelanna_Endling MayRequire="Aelanna.Endling"/>
+		</forcedTraits>
 		<disallowedTraits>
 			<Kind/>
 			<Pyromaniac/>
