@@ -34,32 +34,6 @@
 	</BackStoryDef>
 
 	<!--
-	ToDo: Create a new Def that can hold XenotypeChance lists to be referenced by multiple backgrounds.
-	<firstXenotype>
-		<Dirtmole>3</Dirtmole>
-		<Impid>1</Impid>
-		<Neanderthal>3</Neanderthal>
-		<Pigskin>3</Pigskin>
-		<Waster>3</Waster>
-		<Yttakin>3</Yttakin>
-		<AG_Animusen MayRequire="sarg.alphagenes">3</AG_Animusen>
-		<AG_Drakonori MayRequire="sarg.alphagenes">1</AG_Drakonori>
-		<AG_Efreet MayRequire="sarg.alphagenes">1</AG_Efreet>
-		<AG_Helixien MayRequire="sarg.alphagenes">1</AG_Helixien>
-		<AG_Lapis MayRequire="sarg.alphagenes">1</AG_Lapis>
-		<BS_Dwarf MayRequire="RedMattis.BigSmall">4</BS_Dwarf>
-		<BS_GreatOgre MayRequire="RedMattis.BigSmall">2</BS_GreatOgre>
-		<BS_Half_Jotun MayRequire="RedMattis.BigSmall">1</BS_Half_Jotun>
-		<BS_Ogre MayRequire="RedMattis.BigSmall">4</BS_Ogre>
-		<BS_Redcap MayRequire="RedMattis.BigSmall">1</BS_Redcap>
-		<BS_Svartalf MayRequire="RedMattis.BigSmall">2</BS_Svartalf>
-		<DV_Bogleg MayRequire="det.boglegs">2</DV_Bogleg>
-		<Stoneborn MayRequire="det.stoneborn">2</Stoneborn>
-		<DV_Venator MayRequire="det.venators">2</DV_Venator>
-		<VRESaurids_Saurid MayRequire="vanillaracesexpanded.saurid">3</VRESaurids_Saurid>
-		<VRE_Boarskin MayRequire="vanillaracesexpanded.pigskin">1</VRE_Boarskin>
-	</firstXenotype>
-
 	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
 		<defName>STLS_Backstory_Thrall_Child_Baseliner</defName>
 		<title>baseliner</title>
@@ -73,16 +47,13 @@
 		<defName>STLS_Backstory_Thrall_Child_Experiment</defName>
 		<title>hybrid</title>
 		<titleShort>hybrid</titleShort>
-		<baseDesc><![CDATA[[PAWN_nameDef] was conceived from genetic material of two different xenotypes, following the designs of the masters. The rest of [PAWN_possessive] childhood was spent in the never-ending loneliness of a growth vat.]]>
+		<baseDesc>
+			<![CDATA[[PAWN_nameDef] was conceived from genetic material of two different xenotypes, following the designs of the masters. The rest of [PAWN_possessive] childhood was spent in the never-ending loneliness of a growth vat.]]>
 		</baseDesc>
 		<modExtensions>
 			<li Class="Starless.Extensions.BackgroundEndogenes">
-				<firstXenotype>
-					<Neanderthal>3</Neanderthal>
-				</firstXenotype>
-				<secondXenotype>
-					<Impid>3</Impid>
-				</secondXenotype>
+				<xenotype>STLS_XenotypeChances_Hybrid</xenotype>
+				<hybridXenotype>STLS_XenotypeChances_Hybrid</hybridXenotype>
 			</li>
 		</modExtensions>
 	</BackstoryDef>

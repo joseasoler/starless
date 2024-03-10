@@ -13,23 +13,18 @@ namespace Starless.Extensions
 		/// <summary>
 		/// First xenotype to use for setting endogenes. If secondXenotype is not set, then this will be the final xenotype.
 		/// </summary>
-		public List<XenotypeChance> firstXenotype;
+		public Defs.XenotypeChancesDef xenotype;
 
 		/// <summary>
-		/// Second xenotype to use for setting endogenes. firstXenotype must be set. Generates a children of both xenotypes.
+		/// Second xenotype to use for setting endogenes. xenotype must be set. Generates a hybrid of both xenotypes.
 		/// </summary>
-		public List<XenotypeChance> secondXenotype;
+		public Defs.XenotypeChancesDef hybridXenotype;
 
 		public override IEnumerable<string> ConfigErrors()
 		{
-			if (firstXenotype.NullOrEmpty())
+			if (xenotype == null)
 			{
-				yield return Report.ConfigError(GetType(), $"{nameof(firstXenotype)} must have a value and cannot be empty.");
-			}
-
-			if (secondXenotype != null && secondXenotype.Count == 0)
-			{
-				yield return Report.ConfigError(GetType(), $"{nameof(secondXenotype)} must not be left empty if it is used.");
+				yield return Report.ConfigError(GetType(), $"{nameof(xenotype)} must have a value.");
 			}
 		}
 	}
