@@ -1,18 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<BackstoryDef>
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
 		<defName>STLS_Backstory_Child_Offworld_Escaped_Thrall</defName>
 		<title>escaped thrall</title>
 		<titleShort>escapee</titleShort>
-		<baseDesc>[PAWN_nameDef] endured a harrowing childhood as a starless thrall until [PAWN_pronoun] managed to escape.\n\nThis experience left [PAWN_objective] with a burning desire for revenge.</baseDesc>
+		<baseDesc>
+			<![CDATA[[PAWN_nameDef] was vatgrown within a starless thrall factory, and endured a premature expulsion from the growth vat.\n\nThe harrowing experience of escaping from the masters instilled [PAWN_objective] with an unrelenting thirst for revenge.]]>
+		</baseDesc>
 		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+		</skillGains>
 		<forcedTraits>
-			<Bloodlust />
+			<Bloodlust/>
 		</forcedTraits>
-		<spawnCategories>
+		<spawnCategories Inherit="False">
 			<li>Offworld</li>
 			<li>Madman</li>
+			<li>Pirate</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">STLS_Backstory_SpawnCategory_Starless</li>
 		</spawnCategories>
 	</BackstoryDef>
 

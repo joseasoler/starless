@@ -98,6 +98,28 @@ namespace Starless
 		}
 
 		/// <summary>
+		/// Applies additional genes coming from the background of the pawn.
+		/// </summary>
+		/// <param name="pawn">Pawn to be modified.</param>
+		/// <param name="genes">Genes to apply.</param>
+		/// <param name="asXenogenes">True if the gene should be added as a xenogene.</param>
+		/// <returns>True if any changes were made.</returns>
+		private static bool TryAddGenes(Pawn pawn, List<GeneDef> genes, bool asXenogenes)
+		{
+			if (genes.NullOrEmpty())
+			{
+				return false;
+			}
+
+			foreach (GeneDef gene in genes)
+			{
+				pawn.genes.AddGene(gene, asXenogenes);
+			}
+
+			return true;
+		}
+
+		/// <summary>
 		/// Applies additional xenogenes coming from the background of the pawn.
 		/// </summary>
 		/// <param name="pawn">Pawn to be modified.</param>
@@ -105,17 +127,12 @@ namespace Starless
 		/// <returns>True if any changes were made.</returns>
 		private static bool TryAddXenogenes(Pawn pawn, BackgroundXenogenes backgroundXenogenes)
 		{
-			if (backgroundXenogenes == null || backgroundXenogenes.xenogenes.NullOrEmpty())
+			if (backgroundXenogenes == null)
 			{
 				return false;
 			}
 
-			foreach (GeneDef gene in backgroundXenogenes.xenogenes)
-			{
-				pawn.genes.AddGene(gene, true);
-			}
-
-			return true;
+			return TryAddGenes(pawn, backgroundXenogenes.xenogenes, true);
 		}
 
 		/// <summary>
@@ -165,11 +182,33 @@ namespace Starless
 						SetToHybrid(pawn, firstXenotypeDef, secondXenotypeDef);
 					}
 				}
+
+				// Forced endogenes are only applied when both xenotype application and hybridization did not take place.
+				madeChanges = madeChanges || TryAddGenes(pawn, endogenes.endogenes, false);
+
+				// Inbred chance is always applied.
+				if (Rand.Value <= endogenes.inbredChance)
+				{
+					madeChanges = true;
+					pawn.genes.AddGene(GeneDefOf.Inbred, false);
+				}
 			}
 
 			madeChanges = TryAddXenogenes(pawn, xenogenes) || madeChanges;
 
 			return madeChanges;
+		}
+
+		/// <summary>
+		/// Applies gene changes caused by the adulthood backstory of the pawn. These can come from the BackgroundXenogenes
+		/// mod extension.
+		/// </summary>
+		/// <param name="pawn">Pawn being generated.</param>
+		/// <returns>True if any modifications took place.</returns>
+		private static bool TrySetAdulthoodGenes(Pawn pawn)
+		{
+			BackgroundXenogenes xenogenes = pawn.story.Adulthood?.GetModExtension<BackgroundXenogenes>();
+			return TryAddXenogenes(pawn, xenogenes);
 		}
 
 		/// <summary>
@@ -184,7 +223,9 @@ namespace Starless
 				return false;
 			}
 
-			return TrySetChildhoodGenes(pawn);
+			bool madeChanges = TrySetChildhoodGenes(pawn);
+			madeChanges = TrySetAdulthoodGenes(pawn) || madeChanges;
+			return madeChanges;
 		}
 	}
 }

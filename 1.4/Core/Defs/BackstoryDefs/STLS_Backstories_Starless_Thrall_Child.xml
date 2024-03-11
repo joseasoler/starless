@@ -7,22 +7,20 @@
 			<li>ManualDumb</li>
 		</requiredWorkTags>
 		<modExtensions>
+			<!--
+			Base xenogenes implanted into every thrall.
+			Adulthood xenotypes will add extra genes fitting the intended role for the thrall.
+			-->
 			<li Class="Starless.Extensions.BackgroundXenogenes">
 				<xenogenes>
-					<li>Aggression_DeadCalm</li>         <!-- -1 -->
-					<li>DarkVision</li>                  <!-- -1 -->
-					<li>MaxTemp_LargeIncrease</li>       <!-- -2 -->
-					<li>MinTemp_LargeDecrease</li>       <!-- -2 -->
-					<li>MoveSpeed_Quick</li>             <!-- -3 -->
-					<li>Superclotting</li>               <!-- -1 -->
-
-					<li>ChemicalDependency_Psychite</li> <!-- +4 -->
-					<li>Instability_Mild</li>            <!-- +2 -->
-					<li>UVSensitivity_Mild</li>          <!-- +3 -->
-					<li>Sterile</li>                     <!-- +1 -->
-
+					<li>Aggression_DeadCalm</li>   <!-- -1 -->
+					<li>DarkVision</li>            <!-- -1 -->
+					<li>MaxTemp_LargeIncrease</li> <!-- -2 -->
+					<li>MinTemp_LargeDecrease</li> <!-- -2 -->
+					<li>Instability_Mild</li>      <!-- +2 -->
+					<li>UVSensitivity_Mild</li>    <!-- +3 -->
+					<li>Sterile</li>               <!-- +1 -->
 					<li>FacialRidges</li>
-					<li>Libido_High</li>
 					<li>Skin_InkBlack</li>
 					<li>Skin_LightGray</li>
 					<li>Skin_SheerWhite</li>
@@ -33,26 +31,131 @@
 		</modExtensions>
 	</BackStoryDef>
 
-	<!--
 	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
-		<defName>STLS_Backstory_Thrall_Child_Baseliner</defName>
-		<title>baseliner</title>
-		<titleShort>baseliner</titleShort>
-		<baseDesc><![CDATA[Anonymous genetic material from two standard thralls was used to create [PAWN_nameDef]. After an unremarkable growth vat process, [PAWN_pronoun] joined the ranks of [PAWN_possessive] brethren.]]>
-		</baseDesc>
+		<defName>STLS_Child_Thrall_Abductee</defName>
+		<title>abductee</title>
+		<titleShort>abductee</titleShort>
+		<baseDesc>
+			<![CDATA[[PAWN_nameDef] was forcibly torn from [PAWN_possessive] parents during a starless raid.\n\n[PAWN_pronoun] clings to fleeting memories of a time when [PAWN_pronoun] felt the comforting embrace of family and the unburdened joy of childhood, all before the nightmare of forced vat growth began.]]></baseDesc>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+		</skillGains>
 	</BackstoryDef>
-	-->
 
 	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
-		<defName>STLS_Backstory_Thrall_Child_Experiment</defName>
-		<title>hybrid</title>
-		<titleShort>hybrid</titleShort>
+		<defName>STLS_Backstory_Thrall_Child_Bloodbag</defName>
+		<title>bloodbag</title>
+		<titleShort>bloodbag</titleShort>
 		<baseDesc>
-			<![CDATA[[PAWN_nameDef] was conceived from genetic material of two different xenotypes, following the designs of the masters. The rest of [PAWN_possessive] childhood was spent in the never-ending loneliness of a growth vat.]]>
+			<![CDATA[From the moment of [PAWN_possessive] birth, [PAWN_nameDef] was condemned to an existence of eternal blood-draining.\n\n[PAWN_possessive] childhood unfolded as a never-ending abyss of darkness and solitude.]]>
+		</baseDesc>
+		<workDisables>
+			<li>Caring</li>
+			<li>Social</li>
+		</workDisables>
+		<forcedTraits>
+			<Psychopath/>
+			<Recluse/>
+			<Immunity>1</Immunity>
+		</forcedTraits>
+		<modExtensions>
+			<li Class="Starless.Extensions.BackgroundEndogenes">
+				<inbredChance>1.0</inbredChance>
+			</li>
+		</modExtensions>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Cattle</defName>
+		<title>cattle</title>
+		<titleShort>cattle</titleShort>
+		<baseDesc>
+			<![CDATA[[PAWN_nameDef] was conceived naturally in one of the cattle reserves of the starless.\n\n[PAWN_pronoun] evaded the grim destiny reserved to the rest of [PAWN_possessive] kind, and made it into the ranks of the thralls.]]>
+		</baseDesc>
+		<forcedTraits>
+			<Nerves>1</Nerves>
+			<Tough/>
+		</forcedTraits>
+		<modExtensions>
+			<li Class="Starless.Extensions.BackgroundEndogenes">
+				<inbredChance>1.0</inbredChance>
+			</li>
+		</modExtensions>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Defective</defName>
+		<title>defective</title>
+		<titleShort>defective</titleShort>
+		<baseDesc>
+			<![CDATA[[PAWN_nameDef] was created in one of the thrall factories of the starless masters. Mistakes during the procedure left [PAWN_possessive] genetic material damaged.]]>
+		</baseDesc>
+		<modExtensions>
+			<li Class="Starless.Extensions.BackgroundEndogenes">
+				<endogenes>
+					<li>Instability_Mild</li>
+				</endogenes>
+				<inbredChance>0.1</inbredChance>
+			</li>
+		</modExtensions>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Vatling</defName>
+		<title>vatling</title>
+		<titleShort>vatling</titleShort>
+		<baseDesc><![CDATA[[PAWN_nameDef] is a mass produced thrall, created from baseliner stock.]]>
+		</baseDesc>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Xenovatling</defName>
+		<title>xenovatling</title>
+		<titleShort>xenovatling</titleShort>
+		<baseDesc>
+			<![CDATA[[PAWN_nameDef] was produced following standard thrall breeding methods, but using alternate xenotype stock.]]>
 		</baseDesc>
 		<modExtensions>
 			<li Class="Starless.Extensions.BackgroundEndogenes">
 				<xenotype>STLS_XenotypeChances_Hybrid</xenotype>
+				<inbredChance>0.4</inbredChance>
+			</li>
+		</modExtensions>
+	</BackstoryDef>
+
+	<!-- Genetical experimentation reject backstories. -->
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Experiment</defName>
+		<title>experiment</title>
+		<titleShort>experiment</titleShort>
+		<baseDesc>
+			<![CDATA[[PAWN_nameDef] was conceived using genetic material of two different xenotypes, following the designs of the starless masters.]]>
+		</baseDesc>
+		<modExtensions>
+			<li Class="Starless.Extensions.BackgroundEndogenes">
+				<xenotype>STLS_XenotypeChances_Hybrid</xenotype>
+				<hybridXenotype>STLS_XenotypeChances_Hybrid</hybridXenotype>
+			</li>
+		</modExtensions>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Child_Base">
+		<defName>STLS_Backstory_Thrall_Child_Hybrid</defName>
+		<title>hybrid</title>
+		<titleShort>hybrid</titleShort>
+		<baseDesc>
+			<![CDATA[[PAWN_nameDef] was created by mixing the genetic material of a standard thrall and a more exotic xenotype.]]>
+		</baseDesc>
+		<modExtensions>
+			<li Class="Starless.Extensions.BackgroundEndogenes">
+				<xenotype>STLS_XenotypeChances_Baseliner</xenotype>
 				<hybridXenotype>STLS_XenotypeChances_Hybrid</hybridXenotype>
 			</li>
 		</modExtensions>

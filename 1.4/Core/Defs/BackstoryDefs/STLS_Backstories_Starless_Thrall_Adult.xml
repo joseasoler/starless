@@ -11,13 +11,72 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</BackStoryDef>
+	
+	<!-- Melee combatant backgrounds. -->
 
 	<BackstoryDef ParentName="STLS_Backstory_Thrall_Adult_Base">
-		<defName>STLS_Backstory_Thrall_Adult_Test</defName>
-		<title>test</title>
-		<titleShort>test</titleShort>
+		<defName>STLS_Backstory_Thrall_Adult_Assassin</defName>
+		<title>assassin</title>
+		<titleShort>assassin</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>The masters saw potential in [PAWN_nameDef] to serve as a formidable melee fighter.\n\nAfter being subjected to grueling training as a melee fighter, [PAWN_pronoun] remained determined to seize whatever moments of life's pleasures and freedom [PAWN_pronoun] could before [PAWN_possessive] inevitable demise.</baseDesc>
+		<baseDesc><![CDATA[Acknowledging [PAWN_nameDef]'s natural agility and lethal precision, the masters crafted [PAWN_pronoun] into a nimble assassin. Perfected through precise xenogenetic enhancements, [PAWN_pronoun] excels at swiftly inflicting devastating damage.]]></baseDesc>
+		<modExtensions>
+			<li Class="Starless.Extensions.BackgroundXenogenes">
+				<xenogenes>
+					<li>AptitudeStrong_Melee</li> <!-- -1 -->
+					<li>STLS_Gene_Nimble</li>     <!-- -2 -->
+					<li>MeleeDamage_Strong</li>   <!-- -2 -->
+					<li>KillThirst</li>           <!-- +4 -->
+					<li>Body_Thin</li>
+				</xenogenes>
+			</li>
+		</modExtensions>
+		<spawnCategories>
+			<li>STLS_Backstory_SpawnCategory_Thrall_Melee</li>
+		</spawnCategories>
 	</BackstoryDef>
 
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Adult_Base">
+		<defName>STLS_Backstory_Thrall_Adult_Brawler</defName>
+		<title>brawler</title>
+		<titleShort>brawler</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc><![CDATA[The masters discerned [PAWN_nameDef]'s potential as a formidable melee combatant. Through arduous xenogenetic engineering, [PAWN_pronoun] transformed into a relentless and embittered killing machine.]]></baseDesc>
+		<modExtensions>
+			<li Class="Starless.Extensions.BackgroundXenogenes">
+				<xenogenes>
+					<li>AptitudeRemarkable_Melee</li> <!-- -3 -->
+					<li>KillThirst</li>               <!-- +4 -->
+					<li>Body_Hulk</li>
+				</xenogenes>
+			</li>
+		</modExtensions>
+		<spawnCategories>
+			<li>STLS_Backstory_SpawnCategory_Thrall_Melee</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="STLS_Backstory_Thrall_Adult_Base">
+		<defName>STLS_Backstory_Thrall_Adult_Tank</defName>
+		<title>tank</title>
+		<titleShort>tank</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc><![CDATA[[PAWN_nameDef] has undergone xenogenic grafting, fortifying [PAWN_pronoun] with specialized xenogenes that significantly enhance [PAWN_possessive] resistance to damage, effectively transforming [PAWN_objective] into an impervious living tank.]]></baseDesc>
+		<modExtensions>
+			<li Class="Starless.Extensions.BackgroundXenogenes">
+				<xenogenes>
+					<li>Pain_Reduced</li>  <!-- -1 -->
+					<li>Robust</li>        <!-- -2 -->
+					<li>Superclotting</li> <!-- -1 -->
+					<li>Unstoppable</li>   <!-- -2 -->
+					<li>Sleepy</li>        <!-- +2 -->
+					<li>KillThirst</li>    <!-- +4 -->
+					<li>Body_Fat</li>
+				</xenogenes>
+			</li>
+		</modExtensions>
+		<spawnCategories>
+			<li>STLS_Backstory_SpawnCategory_Thrall_Melee</li>
+		</spawnCategories>
+	</BackstoryDef>
 </Defs>

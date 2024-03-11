@@ -20,12 +20,23 @@ namespace Starless.Extensions
 		/// </summary>
 		public Defs.XenotypeChancesDef hybridXenotype;
 
+		/// <summary>
+		/// Random chance of having the inbred gene.
+		/// </summary>
+		public float inbredChance = -1.0F;
+
+		public List<GeneDef> endogenes;
+
 		public override IEnumerable<string> ConfigErrors()
 		{
 			if (xenotype == null)
 			{
 				yield return Report.ConfigError(GetType(), $"{nameof(xenotype)} must have a value.");
 			}
+
+			if (!endogenes.NullOrEmpty() && xenotype != null)
+				yield return Report.ConfigError(GetType(),
+					$"must not use {nameof(xenotype)} and {nameof(endogenes)} at the same time.");
 		}
 	}
 }

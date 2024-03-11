@@ -3,9 +3,10 @@
 
 	<GeneDef ParentName="GeneHealingRateBase">
 		<defName>STLS_Gene_Chemsuppression</defName>
-		<label>Chem-suppression</label>
+		<label>chem-suppression</label>
 		<labelShortAdj>slow-heal</labelShortAdj>
-		<description><![CDATA[This gene prevents chemfuel synthesis by the host's cells, suppressing fire-related abilities.]]></description>
+		<description>
+			<![CDATA[This gene prevents chemfuel synthesis by the host's cells, suppressing fire-related abilities.]]></description>
 		<!-- ToDo: art asset. -->
 		<iconPath>UI/Icons/Genes/Gene_WoundHealingRateSlow</iconPath>
 		<displayOrderInCategory>30</displayOrderInCategory>
@@ -14,6 +15,45 @@
 		<exclusionTags>
 			<li>STLS_GeneTag_Combustion</li>
 		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>STLS_Gene_Nimble</defName>
+		<label>nimble</label>
+		<labelShortAdj>nimble</labelShortAdj>
+		<description>
+			<![CDATA[Individuals bearing the nimble gene exhibit exceptional kinesthetic intelligence. They seem to effortlessly navigate hazards, gracefully dancing through adversity with a preternatural finesse that sets them apart.]]>
+		</description>
+		<!-- ToDo: art asset. -->
+		<iconPath>UI/Icons/Genes/Gene_KindInstinct</iconPath>
+		<displayCategory>Violence</displayCategory>
+		<displayOrderInCategory>60</displayOrderInCategory>
+		<forcedTraits>
+			<li>
+				<def>Nimble</def>
+			</li>
+		</forcedTraits>
+		<biostatMet>-2</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>nimble</symbol>
+					<weight>3</weight>
+				</li>
+				<li>
+					<symbol>agile</symbol>
+				</li>
+				<li>
+					<symbol>lithe</symbol>
+				</li>
+				<li>
+					<symbol>acro</symbol>
+				</li>
+				<li>
+					<symbol>kine</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
 	</GeneDef>
 
 </Defs>
