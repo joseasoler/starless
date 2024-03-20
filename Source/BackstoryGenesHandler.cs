@@ -167,7 +167,7 @@ namespace Starless
 
 			if (endogenes != null)
 			{
-				XenotypeDef firstXenotypeDef = GetRandomXenotype(endogenes.xenotype.xenotypes);
+				XenotypeDef firstXenotypeDef = GetRandomXenotype(endogenes.xenotype?.xenotypes);
 				if (firstXenotypeDef != null)
 				{
 					XenotypeDef secondXenotypeDef = GetRandomXenotype(endogenes.hybridXenotype?.xenotypes, firstXenotypeDef);

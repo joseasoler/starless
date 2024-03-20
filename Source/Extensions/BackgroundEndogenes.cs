@@ -29,12 +29,14 @@ namespace Starless.Extensions
 
 		public override IEnumerable<string> ConfigErrors()
 		{
-			if (xenotype == null)
+			bool hasXenotype = xenotype != null;
+			bool hasEndogenes = endogenes != null && endogenes.Count > 0;
+			if (!hasXenotype && !hasEndogenes)
 			{
-				yield return Report.ConfigError(GetType(), $"{nameof(xenotype)} must have a value.");
+				yield return Report.ConfigError(GetType(), $"must define {nameof(xenotype)} or {nameof(endogenes)}");
 			}
 
-			if (!endogenes.NullOrEmpty() && xenotype != null)
+			else if (hasXenotype && hasEndogenes)
 				yield return Report.ConfigError(GetType(),
 					$"must not use {nameof(xenotype)} and {nameof(endogenes)} at the same time.");
 		}

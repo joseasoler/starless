@@ -10,14 +10,8 @@
 		</baseDesc>
 		<slot>Childhood</slot>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>2</value>
-			</li>
+			<Melee>2</Melee>
+			<Social>2</Social>
 		</skillGains>
 		<forcedTraits>
 			<Bloodlust/>

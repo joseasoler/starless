@@ -3,7 +3,7 @@
 	<name>Starless</name>
 	<author>José Ángel Soler Ortiz</author>
 	<supportedVersions>
-		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<url>https://github.com/joseasoler/starless</url>
 	<packageId>joseasoler.starless</packageId>

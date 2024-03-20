@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <loadFolders>
-	<v1.4>
+	<v1.5>
 		<!-- Also contains Biotech content, as this mod requires this DLC. -->
-		<li>1.4/Core</li>
-		<li IfModActive="Ludeon.RimWorld.Royalty">1.4/Royalty</li>
-		<li IfModActive="Ludeon.RimWorld.Ideology">1.4/Ideology</li>
-	</v1.4>
+		<li>1.5/Core</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/Ideology</li>
+	</v1.5>
 </loadFolders>

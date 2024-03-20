@@ -4,10 +4,10 @@ Project("{1ACF4D02-4783-4132-9D67-577917CE9CA4}") = "Starless", "Starless.csproj
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		1.4|x64 = 1.4|x64
+		1.5|x64 = 1.4|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1ACF4D02-4783-4132-9D67-577917CE9CA4}.1.4|x64.ActiveCfg = 1.4|x64
-		{1ACF4D02-4783-4132-9D67-577917CE9CA4}.1.4|x64.Build.0 = 1.4|x64
+		{1ACF4D02-4783-4132-9D67-577917CE9CA4}.1.5|x64.ActiveCfg = 1.5|x64
+		{1ACF4D02-4783-4132-9D67-577917CE9CA4}.1.5|x64.Build.0 = 1.5|x64
 	EndGlobalSection
 EndGlobal

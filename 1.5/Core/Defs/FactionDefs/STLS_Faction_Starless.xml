@@ -90,7 +90,6 @@ This faction is notorious for their ruthless raids against rimworlds, aimed at a
 			<xenotypeChances>
 				<Baseliner>999</Baseliner>
 			</xenotypeChances>
-			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
 	</FactionDef>
 
